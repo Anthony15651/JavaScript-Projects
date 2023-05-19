@@ -13,3 +13,13 @@ function My_First_Function() { // This is a function to change the text
     var str = "This is the button text!"; // of the button once it is
     document.getElementById("Button_Text").innerHTML = str; // clicked.
 }
+
+function function2() { // Utilizing another HTML event
+    Z = "Nice work!";
+    document.getElementById("button2").innerHTML = Z;
+}
+
+function function3() {
+    A = "I see you hovering";
+    document.getElementById("button2").innerHTML = A;
+}
