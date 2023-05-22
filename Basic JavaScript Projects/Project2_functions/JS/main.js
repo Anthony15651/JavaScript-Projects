@@ -10,8 +10,8 @@ function function2() { // Here is a function that includes
 }
 
 function Make_Red(font_red) { // Here I am practicing more
-    font_red.style.color = "red"; // functions
-    document.getElementById("P1") = font_red;
+    var font = document.getElementById("P1");
+    font.style.color = "red"; // functions
 }
 
 function myFunction() { // Here, I am using the "+=" operator
@@ -24,4 +24,9 @@ function myFunction2() { // Another example of concatenating
     Z = "Nice "; // with "+=", this time using "onmouseover"
     Z += "work!";
     document.getElementById("conc2").innerHTML = Z;
+}
+
+function changeColor(newColor) {
+    var elem = document.getElementById("p2");
+    elem.style.color = newColor;
 }

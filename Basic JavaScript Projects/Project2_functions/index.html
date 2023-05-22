@@ -11,15 +11,18 @@
         </button>
         <br>
 
-        <p id="P1" onclick="Make_Red(P1)">This is a paragraph that will be turned red</p>
+        <p id="P1" onclick="Make_Red('P1');">This is a paragraph that will be turned red</p>
         <p> This is a normal paragraph</p>
-        <button onclick="Make_Red(P1)" id="button2">
+        <button onclick="Make_Red('P1');" id="button2">
             Click me to make the font red!
         </button>
         <br>
         <p id="concatenate" onclick="myFunction()">Click Here!</p>
         <br>
         <p id="conc2" onmouseover="myFunction2()">Hover Here!</p>
-
+        <br>
+        <p id="p2">This paragaraph executes a JavaScript function while using the getElementById() Method.</p>
+        <button onclick="changeColor('blue');">Blue</button>
+        <button onclick="changeColor('red');">Red</button>
     </body>
 </html>
