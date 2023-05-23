@@ -1,3 +1,4 @@
+// TIMER CONTROLS
 function countdown() {
     var seconds = document.getElementById("seconds").value;
 
@@ -14,6 +15,7 @@ function countdown() {
     tick();
 }
 
+// SLIDESHOW CONTROLS
 let slideIndex = 1;
 showSlides(slideIndex);
 
