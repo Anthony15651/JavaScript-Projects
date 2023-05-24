@@ -26,3 +26,25 @@ function pet_function() {
     }
     document.getElementById("output").innerHTML = pet_output;
 }
+
+function myFunction1() {
+    var X = document.getElementsByClassName("class1");
+    text_string = "This text has been updated";
+    X[0].innerHTML = text_string;
+}
+
+function myFunction2() {
+    var c = document.getElementById("canvas1");
+    c.getContext("2d").font = "30px Arial";
+    c.getContext("2d").fillText("Hello World", 170, 130);
+}
+
+function myFunction3() {
+    var c = document.getElementById("canvas2")
+    var cx = c.getContext("2d");
+    grd = cx.createLinearGradient(0, 0, 500, 0);
+    grd.addColorStop(0, "black");
+    grd.addColorStop(1, "white");
+    cx.fillStyle = grd;
+    cx.fillRect(0, 0, 500, 250);
+}
