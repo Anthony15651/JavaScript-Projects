@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator Project</title>
+        <meta name="description" content="A basic HTML, CSS, and JavaScript Calculator">
+        <meta name="author" content="Anthony Garcia">
+        <link rel="stylesheet" type="text/css" href="./CSS/Calculator_CSS.css">
+        <script src="./JS/Calculator_JavaScript.js" defer></script>
+        <link rel="icon" type="image/x-icon" href="./Images/favicon.ico">
+    </head>
+    <body>
+        <!-- THIS IS THE MAIN CONTAINER THAT WILL DISPLAY THE CALCULATOR -->
+        <div class="calculator">
+            <!-- THIS INPUT DISPLAYS THE RESULT OF THE CALCULATION -->
+            <input type="text" class="calculator-screen" value="0" disabled>
+            <!-- THIS SECTION DISPLAYS ALL BUTTONS THAT A USER CAN PRESS TO CALCULATE -->
+            <div class="calculator-keys">
+
+                <button type="button" class="operator" value="+">+</button>
+                <button type="button" class="operator" value="-">-</button>
+                <button type="button" class="operator" value="*">&times;</button>
+                <button type="button" class="operator" value="/">&divide;</button>
+
+                <button type="button" value="7">7</button>
+                <button type="button" value="8">8</button>
+                <button type="button" value="9">9</button>
+
+                <button type="button" value="4">4</button>
+                <button type="button" value="5">5</button>
+                <button type="button" value="6">6</button>
+
+                <button type="button" value="1">1</button>
+                <button type="button" value="2">2</button>
+                <button type="button" value="3">3</button>
+
+                <button type="button" value="0">0</button>
+                <button type="button" class="decimal function" value=".">.</button>
+                <button type="button" class="all-clear function" value="all-clear">AC</button>
+
+                <button type="button" class="equal-sign operator" value="=">=</button>
+
+            </div>
+        </div>
+    </body>
+</html>
