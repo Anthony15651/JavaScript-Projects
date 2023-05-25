@@ -46,7 +46,7 @@ function placeXOrO(squareNumber) {
         let pickASquare;
         // THIS CONDITION ALLOWS OUR WHILE LOOP TO KEEP TRYING IF A SQUARE IS SELECTED ALREADY
 
-        // ADDED AN ADITIONAL LINE TO ONLY HAVE COMPUTER PLAY WHEN IT IS "O"s TURN
+        // ADDED AN ADITIONAL LINE TO ONLY HAVE COMPUTER PLAY WHEN IT IS "O"s TURN (&& activePlayer === "O")
 
         while (!success && activePlayer === "O") {
             // A RANDOM NUMBER BETWEEN 0-8 IS SELECTED
