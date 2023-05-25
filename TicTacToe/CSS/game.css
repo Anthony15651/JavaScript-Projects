@@ -1,0 +1,30 @@
+/* THIS CONTAINER INCLUDES OUR TABLE AND CANVAS. */
+.center-container {
+    width: 608px; /* THIS SETS WIDTH OF CONTAINER */
+    margin: 0 auto; /* THIS CENTERS CONTAINER */
+    margin-top: 50px; /* 50PX FROM TOP OF SCREEN */
+}
+
+table {
+    border-collapse: collapse; /* COLLAPSES TABLE BORDER INTO ONE */
+    border-style: hidden; /* HIDES OUTER BORDERS ON TABLE */
+}
+
+td {
+    cursor: pointer; /* CHANGES CURSOR WHEN HOVERING OVER TD ELEMENTS */
+    border: 4px solid rgba(45, 140, 213, 0.918); /* SETS TABLE BORDER STYLE */
+    padding: 0px; /* REMOVES THE DEFAULT PADDING */
+    width: 200px;
+    height: 200px;
+    filter: contrast(3);
+}
+
+canvas {
+    position: absolute; /* SET CANVAS POSITION TO TOP LEFT */
+    z-index: 10; /* PLACES CANVAS OVER TABLE */
+    pointer-events: none; /* MAKES CANVAS INVISIBLE */
+}
+
+h1 {
+    text-align: center;
+}
