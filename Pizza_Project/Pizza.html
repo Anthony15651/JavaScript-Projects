@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pizza Menu</title>
+        <meta http-equiv="content-Type" content="text/html; charset=UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <script src="./Pizza_JavaScript/Pizza.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="./Pizza_CSS/Pizza.css">
+    </head>
+    <body>
+        <!-- MENU CONTAINER -->
+        <div id="menuBG">
+            <h1 style="margin: 0 0px 0 20px;">Pizza Drill Tutorial</h1>
+            <input id="btnOrder" type="button" onclick="getReceipt()" value="Place Order">
+            <form id="frmMenu">
+
+                <!-- PIZZA SIZES -->
+                <div class="menu left">
+                    <h3>Size:</h3>
+                    <input class="size" type="radio" name="Size" value="Personal Pizza" id="Personal Pizza">
+                    <label for="Personal Pizza">Personal Pizza</label><br>
+                    <input class="size" type="radio" name="Size" value="Small Pizza" id="Small Pizza">
+                    <label for="Small Pizza">Small Pizza</label><br>
+                    <input class="size" type="radio" name="Size" value="Medium Pizza" id="Medium Pizza">
+                    <label for="Medium Pizza">Medium Pizza</label><br>
+                    <input class="size" type="radio" name="Size" value="Large Pizza" id="Large Pizza" checked>
+                    <label for="Large Pizza">Large Pizza</label><br>
+                    <input class="size" type="radio" name="Size" value="Extra Large Pizza" id="Extra Large Pizza">
+                    <label for="Extra Large Pizza">Extra Large Pizza</label><br>
+                </div>
+                <!-- END PIZZA SIZES -->
+
+                <!-- MEATS -->
+                <div class="menu center">
+                    <h3>Meats:</h3>
+                    <input class="toppings" type="checkbox" name="Topping" value="Pepperoni" id="Pepperoni">
+                    <label for="Pepperoni">Pepperoni</label><br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Sausage" id="Sausage">
+                    <label for="Sausage">Sausage</label><br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Canadian Bacon" id="Canadian Bacon">
+                    <label for="Canadian Bacon">Canadian Bacon</label><br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Ground Beef" id="Ground Beef">
+                    <label for="Ground Beef">Ground Beef</label><br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Anchovy" id="Anchovy">
+                    <label for="Anchovy">Anchovy</label><br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Chicken" id="Chicken">
+                    <label for="Chicken">Chicken</label><br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Bacon" id="Bacon">
+                    <label for="Bacon">Bacon</label><br>
+                </div>
+                <!-- END MEATS -->
+
+                <!-- VEGETABLES -->
+                <div class="menu right">
+                    <h3>Vegetables:</h3>
+                    <input class="toppings" type="checkbox" name="Topping" value="Mushrooms" id="Mushrooms">
+                    <label for="Mushrooms">Mushrooms</label><br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Onions" id="Onions">
+                    <label for="Onions">Onions</label><br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Tomatoes" id="Tomatoes">
+                    <label for="Tomatoes">Tomatoes</label><br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Olives" id="Olives">
+                    <label for="Olives">Olives</label><br>
+                    <input class="toppings" type="checkbox" name="Topping" value="Green Peppers" id="Green Peppers">
+                    <label for="Green Peppers">Green Peppers</label><br>
+                </div>
+                <!-- END VEGETABLES -->
+
+
+                <div id="cart">
+                    <div id="showText"></div>
+                    <div id="totalPrice"></div>
+                </div>
+            </form>
+        </div>
+        <!-- END MENU CONTAINER -->
+
+
+    </body>
+</html>
