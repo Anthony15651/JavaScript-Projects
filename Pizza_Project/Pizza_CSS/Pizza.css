@@ -1,30 +1,31 @@
 #menuBG {
-    width: 600px;
-    height: 470px;
+    width: 450px;
+    height: auto;
     margin: 10px auto;
 }
 
 #frmMenu {
-    width: 600px;
-    height: 200px;
+    width: 450px;
+    height: auto;
+    font-weight: bold;
 }
 
 #totalPrice {
     width: 200px;
-    height: 190px;
-    margin: 0 auto;
+    height: 225px;
+    margin: 0px auto;
     float: right;
 }
 
 .left {
     width: 200px;
-    height: 200px;
+    height: 250px;
     float: left;
 }
 
 .right {
     width: 200px;
-    height: 200px;
+    height: 250px;
     float: right;
 }
 
@@ -36,16 +37,23 @@
 
 #showText {
     width: 200px;
-    height: 190px;
+    height: 225px;
+    padding-left: 10px;
+    padding-bottom: 5px;
     margin: 0px auto;
     float: left;
 }
 
 #cart {
-    top: 0;
-    margin: 0px auto;
-    width: 400px;
-    height: 200px;
+    margin-left: 0px auto;
+    margin-right: 0px auto;
+    margin-bottom: 10px;
+    width: 450px;
+    height: 225px;
+    float: left;
+    background-color: #597718;
+    border: 2px solid #58483A;
+    border-radius: 5px;
 }
 
 #btnOrder {
@@ -53,25 +61,49 @@
     margin: auto;
     width: 100px;
     height: 40px;
+    color: white;
+    background-color: #58483A;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+#btnOrder:hover {
+    font-weight: bold;
+    background-color: #40352b;
 }
 
 /* GENERAL DESIGN */
 body {
-    background-color: rgb(117, 117, 117);
+    background-color: #F9EEC9;
 }
 
 h1 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
+    color: #D3B786;
     text-align: center;
+    border: 2px solid #58483A;
+    background-color: #770D15;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    width: 100%;
 }
 
 h3 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
+    text-align: center;
 }
 
 div {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(158, 243, 0);
+    color: #E4B455;
+}
+
+.menu {
+    border: 2px solid #58483A;
+    border-radius: 5px;
+    background-color: #B4000F;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
 }

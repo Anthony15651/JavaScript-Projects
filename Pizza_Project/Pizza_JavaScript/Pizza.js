@@ -1,3 +1,4 @@
+document.getElementById("cart").hidden = true;
 function getReceipt() {
     // THIS INITIALIZES THE STRING SO THAT IT CAN GET PASSED
     // FROM FUNCTION TO FUNCTION, GROWING INTO A FULL RECEIPT
@@ -27,7 +28,36 @@ function getReceipt() {
     console.log("size text1: " + text1);
     console.log("subtotal: $" + runningTotal + ".00");
     // THESE VARIABLES WILL BE PASSED ON TO EACH FUNCTION
-    getTopping(runningTotal,text1);
+    getSauce(runningTotal,text1);
+}
+
+function getSauce(runningTotal, text1) {
+    // THIS FUNCTION ADDS THE PRICE FOR THE SAUCE AND
+    // CONTINUES THE REST OF THE FUNCTION
+    var sauceTotal = 0;
+    var sauceArray = document.getElementsByClassName("sauce");
+    for (var i = 0; i < sauceArray.length; i++) {
+        if (sauceArray[i].checked) {
+            var selectedSauce = sauceArray[i].value;
+            text1 = text1 + selectedSauce + "<br>";
+        }
+    }
+    if (selectedSauce === "Classic Marinara") {
+        sauceTotal = 0;
+    } else if (selectedSauce === "Spicy Red") {
+        sauceTotal = 3;
+    } else if (selectedSauce === "Buffalo") {
+        sauceTotal = 3;
+    } else if (selectedSauce === "Alfredo") {
+        sauceTotal = 3;
+    } else if (selectedSauce === "Pesto") {
+        sauceTotal = 3;
+    }
+    runningTotal = (runningTotal + sauceTotal);
+    console.log(selectedSauce + " = $" + sauceTotal + ".00");
+    console.log("sauce text1: " + text1);
+    console.log("subtotal = $" + runningTotal + ".00");
+    getTopping(runningTotal, text1);
 }
 
 function getTopping(runningTotal, text1) {
@@ -56,6 +86,7 @@ function getTopping(runningTotal, text1) {
     console.log("Purchase Total: " + "$" + runningTotal + ".00");
     document.getElementById("showText").innerHTML = text1;
     document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>$" + runningTotal + ".00" + "</strong></h3>";
+    document.getElementById("cart").hidden = false;
 }
 
 
