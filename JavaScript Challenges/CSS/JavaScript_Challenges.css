@@ -1,0 +1,129 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* FADE IN EFFECT */
+body {
+    opacity: 1;
+    transition: 3s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+/* BUTTON USED TO OPEN CONTACT FORM */
+.open-button {
+    border-radius: 5px;
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: .8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+/* POPUP FORM (HIDDEN BY DEFAULT) */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+/* ADD STYLES TO THE FORM CONTAINER */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* FULL-WIDTH INPUT FIELDS */
+.form-container input[type=text], .form-container input[type=password] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* WHEN THE INPUT GETS FOCUSED, DO SOMETHING */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 87%;
+    margin-bottom: 10px;
+    opacity: .8;
+}
+
+/* CANCEL BUTTON */
+.btn-cancel {
+    opacity: .8;
+    background-color: red;
+    border-radius: 3px;
+}
+
+/* ADD SOME HOVER EFFECTS TO BUTTONS */
+.form-container .btn:hover, .open-button:hover, .btn-cancel:hover {
+    opacity: 1;
+}
+
+/* MOVING TEXT WITH KEYFRAMES */
+.keyframe {
+    color: red;
+    position: relative;
+    animation: mymove 2s 3;
+}
+
+@keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+}
+
+/* ZOOMING IN ON IMAGES WITH KEYFRAMES */
+@keyframes zoom {
+    0% {transform: scale(1,1);}
+    50% {transform: scale(1.2,1.2);}
+    100% {transform: scale(1,1);}
+}
+
+.image1:hover {
+    animation: zoom 2s forwards infinite;
+}
+
+/* SLIDESHOW */
+#slideshow {
+    margin: 50px auto;
+    position: relative;
+    width: 240px;
+    height: 240px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,.4);
+}
+
+#slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+div > img {
+    width: 240px;
+    height: 240px;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JavaScript Challenges</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="CSS/JavaScript_Challenges.css">
+        <script src="./JavaScript/JavaScript_Challenges.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <!-- FADE IN EFFECT SCRIPT 1 -->
+        <script>
+            document.body.classList.add('fade-out');
+        </script>
+        <!-- END FADE IN EFFECT SCRIPT 1 -->
+
+
+        <h1 id="top">JavaScript Challenges</h1>
+        <a href="#bottom">Bottom of Page</a>
+        <p style="font-size:1vw;">Utilizing "vw" to set a font size.</p>
+        <p>Hover above the image below to zoom</p>
+        <image height=200 width=300 class="image1" src="./Images/img_1.png" alt="">
+        <br>
+        <p class="keyframe">Moving text with Keyframes</p>
+
+        <!-- POPUP FORM -->
+        <div>
+            <!-- BUTTON TO OPEN FORM -->
+            <button class="open-button" onclick="openForm()">
+                Contact Popup Form
+            </button>
+
+            <!-- FORM -->
+            <div class="form-popup" id="myForm2">
+                <form action="" class="form-container">
+                    <h1>Contact</h1>
+
+                    <label for="fname2"><b>First Name:</b></label>
+                    <input type="text" placeholder="First Name..." name="fname2" id="fname2" required>
+
+                    <label for="lname2"><b>Last Name:</b></label>
+                    <input type="text" placeholder="Last Name..." name="lname2" id="lname2" required>
+
+                    <label for="email2"><b>Email:</b></label>
+                    <input type="text" placeholder="Email..." name="email2" id="email2" required>
+
+                    <label for="phone2"><b>Phone:</b></label>
+                    <input type="text" placeholder="Phone..." name="phone2" id="phone2" required>
+
+                    <button type="submit" class="btn">Submit</button>
+                    <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+            <!-- END FORM -->
+
+        </div>
+        <!-- END POPUP FORM -->
+        <br>
+        <br>
+        <!-- FORM UTILIZING JAVASCRIPT VALIDATION -->
+        <div>
+            <form id="myForm">
+                <label for="fName">First Name:</label>
+                <input type="text" class="form1" placeholder="First Name..." id="fName"><br>
+                <label for="lName">Last Name:</label>
+                <input type="text" class="form1" placeholder="Last Name..." id="lName"><br>
+                <label for="email">Email:</label>
+                <input type="text" class="form1" placeholder="Email..." id="email"><br>
+                <label for="phone">Phone Number:</label>
+                <input type="text" class="form1" placeholder="Phone Number..." id="phone"><br>
+                <button onclick = "validateForm()">Submit</button>
+            </form>
+        </div>
+        <!-- END FORM UTILIZING JAVASCRIPT VALIDATION -->
+
+        <!-- SLIDESHOW -->
+        <div id="slideshow">
+            <div>
+                <img src="./Images/1.png" alt="">
+            </div>
+            <div>
+                <img src="./Images/2.png" alt="">
+            </div>
+            <div>
+                <p>Demo slide to show customizability</p>
+            </div>
+        </div>
+        <!-- END SLIDESHOW -->
+
+        <p>Extra lines to demonstrate scroll:</p>
+        .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
+        <div id="bottom">
+            <p>Here's the bottom!</p>
+            <a href="#top">Top of Page</a>
+        </div>
+        
+
+        <!-- FADE IN EFFECT SCRIPT 2 -->
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                document.body.classList.remove('fade-out');
+            });
+        </script>
+        <!-- END FADE IN EFFECT SCRIPT 2 -->
+
+    </body>
+</html>

@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Utilizing Document Objects/Methods</title>
+        <title>XML Practice</title>
         <meta charset="UTF-8">
     </head>
     <body>
 
+        <p id="XML_Example"></p>
+        <script>
 
+            // CREATES A TEXT STRING
+            var Movie = "<game>" + "<title>The Legend of Zelda: Tears of the Kingdom</title>" + "<developer>Nintendo</developer>" + "<platform>Nintendo Switch</platform>"
+                + "<year>2023</year>" + "</game>";
+            
+            // CREATES AN XML DOM PARSER
+            XML_Parser = new DOMParser();
 
+            // CREATES A NEW XML DOM OBJECT USING THE TEXT STRING
+            XML_Document = XML_Parser.parseFromString(Movie, "text/xml");
+
+            document.getElementById("XML_Example").innerHTML = 
+            XML_Document.getElementsByTagName("developer")[0].childNodes[0].nodeValue;
+
+        </script>
     </body>
 </html>
