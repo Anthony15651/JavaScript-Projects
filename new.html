@@ -1,27 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>XML Practice</title>
+        <title>Misc. HTML</title>
         <meta charset="UTF-8">
     </head>
     <body>
+        <p id="p1"></p>
 
-        <p id="XML_Example"></p>
         <script>
-
-            // CREATES A TEXT STRING
-            var Movie = "<game>" + "<title>The Legend of Zelda: Tears of the Kingdom</title>" + "<developer>Nintendo</developer>" + "<platform>Nintendo Switch</platform>"
-                + "<year>2023</year>" + "</game>";
-            
-            // CREATES AN XML DOM PARSER
-            XML_Parser = new DOMParser();
-
-            // CREATES A NEW XML DOM OBJECT USING THE TEXT STRING
-            XML_Document = XML_Parser.parseFromString(Movie, "text/xml");
-
-            document.getElementById("XML_Example").innerHTML = 
-            XML_Document.getElementsByTagName("developer")[0].childNodes[0].nodeValue;
-
+            var obj = {"name":"John", "age":30, "city":"New York"};
+            var myJSON = JSON.parse(obj);
+            document.getElementById("p1").innerHTML = myJSON.name;
         </script>
     </body>
 </html>
