@@ -7,7 +7,7 @@ This repository contains my JavaScript projects completed through The Tech Acade
   <li><a href="https://github.com/Anthony15651/JavaScript-Projects/tree/main/Pizza_Project" target="_blank">Pizza Menu</a></li>
   <li><a href="https://github.com/Anthony15651/JavaScript-Projects/tree/main/TicTacToe" target="_blank">Tic-Tac-Toe Game</a></li>
   <li><a href="https://github.com/Anthony15651/JavaScript-Projects/tree/main/Calculator" target="_blank">Calculator</a></li>
-  <li><a href="" target="_blank">To-Do List</a></li>
+  <li><a href="https://github.com/Anthony15651/JavaScript-Projects/tree/main/ToDo%20App" target="_blank">To-Do List</a></li>
 </ul>
 
 <h3>Pizza Menu</h3>
