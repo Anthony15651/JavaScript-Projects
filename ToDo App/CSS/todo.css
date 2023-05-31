@@ -1,3 +1,7 @@
+* {
+    background-color: #f1f1f1;
+}
+
 html {
     font-family: "Avenir Next", Helvetica, sans-serif;
     text-align: center;
@@ -13,7 +17,7 @@ input {
     width: 500px;
     height: 60px;
     font-size: 40px;
-    border: 0;
+    border: none;
 }
 
 input:focus {
@@ -47,6 +51,20 @@ ul {
 
 .list-item {
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a {
+    color: black;
+}
+
+.remove {
+    border-radius: 3px;
+    background-color: red;
+    opacity: .7;
+}
+
+.remove:hover {
+    opacity: 1;
 }
