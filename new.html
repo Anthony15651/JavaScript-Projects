@@ -5,21 +5,19 @@
         <meta charset="UTF-8">
     </head>
     <body>
-        <p id="p1"></p>
-        <p id="p2"></p>
-        <p id="p3"></p>
+        <p id="p1" style="color: black;">
+            Double click to turn this paragraph red!
+        </p>
 
         <script>
-            var obj = {"name":"John", "age":30, "city":"New York"};
-            var myJSON = JSON.stringify(obj);
-            document.getElementById("p1").innerHTML = myJSON;
+            function myFunction () {
+                document.getElementById("p1").style.color = "red";
+            }
 
-            var obj2 = document.getElementById("p1").innerHTML;
-            var myJSON2 = JSON.parse(obj2);
-            document.getElementById("p2").innerHTML = myJSON2.name + " is " + myJSON2.age + " years old and lives in " + myJSON2.city + ".";
-
-            localStorage.setItem("Gender", "Male");
-            document.getElementById("p3").innerHTML = localStorage.getItem("Gender");
+            document.getElementById('p1').addEventListener('dblclick', myFunction);
         </script>
+
+
+
     </body>
 </html>
